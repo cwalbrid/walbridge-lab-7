@@ -27,7 +27,7 @@ var groceryList = [
 //this is a forEach loop that lists each item's name and price
 
 groceryList.forEach(function(groceryItem){
-	console.log(groceryItem.name + "- $" + groceryItem.price)
+	console.log(groceryItem.name + "- $" + groceryItem.price.toFixed(2))
 });
 
 
@@ -39,4 +39,4 @@ for (var i = 0; i < groceryList.length; i++){
 	total += groceryList[i].price;
 }
 
-console.log("Total: $" + total)
+console.log("Total: $" + total.toFixed(2))
